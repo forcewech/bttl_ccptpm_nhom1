@@ -4,7 +4,7 @@ const app = express();
 const router = require("./router/index");
 const cors = require("cors");
 
-const port = 5000;
+// const port = 5000;
 
 app.use(express.json());
 
