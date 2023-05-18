@@ -7,7 +7,7 @@ const dotenv = require("dotenv");
 
 dotenv.config();
 
-const port = process.env.PORT || 5000;
+const port = 5000;
 const URI = process.env.DATABASE_URL;
 app.use(express.json());
 
@@ -32,6 +32,6 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.listen(process.env.PORT || port, () => {
+app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
